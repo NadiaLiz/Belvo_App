@@ -1,0 +1,7 @@
+fastapi
+firebase-admin
+pyrebase4
+uvicorn
+pydantic
+pydantic[email]
+fastapi[all]
