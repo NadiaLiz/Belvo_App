@@ -14,7 +14,7 @@
     </div>
    
     <!-- Contenedor para la tabla de cuentas centrada y con mayor ancho -->
-    <div class="institutions_container_table_c" style="display: flex; justify-content: center;">
+    <div class="institutions_container_table" style="display: flex; justify-content: center;">
       <div class="institutions_table" style="width: 90%;"> <!-- Ajuste del ancho aquí -->
         <!-- Tabla usando a-table -->
         <a-table
@@ -23,7 +23,7 @@
           rowKey="number"
           @rowClick="redirectTransaction"
           bordered
-          style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"
+          style="min-width: 800px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"
         >
           <a-table-column title="Agencia" dataIndex="agency" key="agency" />
           <a-table-column title="Categoria" dataIndex="category" key="category" width="200" />

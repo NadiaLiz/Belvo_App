@@ -18,7 +18,7 @@
           rowKey="id"
           @rowClick="account"
           bordered
-          style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"
+          style="min-width: 800px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"
         >
           <a-table-column title="ID" dataIndex="id" key="id" />
           <a-table-column title="Nombre" dataIndex="name" key="name" width="250" />

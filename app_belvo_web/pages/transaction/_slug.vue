@@ -8,15 +8,26 @@
       <a-page-header @back="goBack" title="Volver"></a-page-header>
 
       <!-- Mostrar el balance de forma centrada -->
-      <div class="balance-title">
-        <h1>BALANCE : {{ balance }}</h1>
+      <div class="balance-container">
+        <table class="balance-table">
+          <tr>
+            <th class="balance-title">BALANCE</th>
+            <td class="balance-amount">{{ balance }}</td>
+          </tr>
+        </table>
       </div>
+
+      <!--div class="balance-title">
+        <h1>BALANCE : {{ balance }}</h1>
+      </div-->
     </div>
 
     <!-- Contenedor de la tabla -->
     <div class="institutions_container_table">
       <div class="institutions_table">
-        <a-table :loading="loading" :dataSource="transactions" rowKey="id" bordered style="width: 95%; margin: 0 auto;">
+        <a-table :loading="loading" :dataSource="transactions" rowKey="id" bordered 
+          style="min-width: 800px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"
+          >
           <a-table-column title="ID" dataIndex="id" key="id" />
           <a-table-column title="Categoria" dataIndex="category" key="category" width="200" />
           <a-table-column title="Descripcion" dataIndex="description" key="description" width="250" />
